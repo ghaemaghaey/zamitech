@@ -21,7 +21,15 @@ from django.views.generic import TemplateView
 import os
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='index.html')),
+    path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name="index.html"), name='home'),
+    path('about/', TemplateView.as_view(template_name="about.html"), name='about'),
+    path('contact/', TemplateView.as_view(template_name="cantact-us.html"), name='contact'),
+    path('product/', TemplateView.as_view(template_name="product.html"), name='product'),
+    path('request-demo/', TemplateView.as_view(template_name="request-demo.html"), name='demo'),
+    
+
+
 ]
 
 if settings.DEBUG:
