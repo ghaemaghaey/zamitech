@@ -26,8 +26,8 @@
 
             <nav class="navigation">
                 <div class="nav-right">
-                    <a href="/index.html" class="nav-right__wraper">
-                        <img src="/images/image.png" alt="web logo" class="web-logo">
+                    <a href="{% url 'home' %}" class="nav-right__wraper">
+                        <img src="{% static '/images/image.png' %}" alt="web logo" class="web-logo">
                     <div class="nav-right__title">زامیتک</div>
                     </a>
                 </div>
@@ -35,8 +35,8 @@
                     <div class="nav-left__menu">
                         <ul class="nav-lists">
                             <a href=""><li class="nav-item">خانه</li></a>
-                            <a href="/product/"><li class="nav-item">محصولات</li></a>
-                            <a href="/about-us/"><li class="nav-item">درباره ما</li></a>
+                            <a href="{% url 'product' %}"><li class="nav-item">محصولات</li></a>
+                            <a href="{% url 'about' %}"><li class="nav-item">درباره ما</li></a>
                             <a href="#"><li class="nav-item">وبلاگ</li></a>
                             <a href="/contact-us/"><li class="nav-item">تماس با ما</li></a>
                         </ul>
@@ -50,15 +50,15 @@
                          </div>
                     <div class="nav-menu__mobile">
                         <ul class="nav-lists__mobile">
-                            <a href="/index.html" class="nav-right__wraper">
-                       <img src="/images/image.png" alt="web logo" class="web-logo">
+                            <a href="{% url 'home' %}" class="nav-right__wraper">
+                       <img src="{% static '/images/image.png' %}" alt="web logo" class="web-logo">
                    <div class="nav-right__title">زامیتک</div>
                    </a>
-                            <a href="/index.html"><li class="nav-item">خانه</li></a>
-                            <a href="/product.html"><li class="nav-item">محصولات</li></a>
-                            <a href="/about-us.html"><li class="nav-item">درباره ما</li></a>
+                            <a href="{% url 'home' %}"><li class="nav-item">خانه</li></a>
+                            <a href="{% url 'product' %}"><li class="nav-item">محصولات</li></a>
+                            <a href="{% url 'about' %}"><li class="nav-item">درباره ما</li></a>
                             <a href="#"><li class="nav-item">وبلاگ</li></a>
-                            <a href="/cantact-us.html"><li class="nav-item">تماس با ما</li></a>
+                            <a href="{% url 'product' %}"><li class="nav-item">تماس با ما</li></a>
                         </ul>
                                  <div class="nav-left__links nav-links__mobile">
                                          <a href="/request-demo.html" class="nav-link nav-link__demo">درخواست دمو</a>
@@ -74,7 +74,7 @@
                      <p>پیشگام در <span>هوشمندسازی کشاورزی</span> با فناوری‌های بومی و نوآورانه</p>
                 </div>
                 <div class="herosection__links">
-                    <a href="/product.html">مشاهده محصولات</a>
+                    <a href="{% url 'product' %}">مشاهده محصولات</a>
                     <a href="/request-demo.html">درخواست دمو</a>
                 </div>
                 <!-- <div class="herosection__scroolbar">
@@ -84,7 +84,7 @@
         </div>
                       <video autoplay muted loop class="loading-video">
                     <source
-                    src="/videos/Farmers Edge- Technology Enabler & Managed Services Provider for Agribusinesses.mp4"
+                    src="{% static '/videos/Farmers Edge- Technology Enabler & Managed Services Provider for Agribusinesses.mp4' %}"
                     type="video/mp4"
                     />
     </header>
@@ -190,8 +190,8 @@
             <h2>آماده تحول در کشاورزی خود هستید؟</h2>
             <p>ما در زامیتک با تیمی از متخصصان هوش مصنوعی، کشاورزی و فناوری اطلاعات آماده ارائه راهکارهای<br> اختصاصی برای شما هستیم.</p>
                 <div class="herosection__links">
-                    <a href="/cantact-us.html"> درخواست مشاوره رایگان</a>
-                    <a href="/about-us.html">درباره ما بیشتر بدانید </a>
+                    <a href="{% url 'product' %}"> درخواست مشاوره رایگان</a>
+                    <a href="{% url 'about' %}">درباره ما بیشتر بدانید </a>
                 </div>
                 </div>
         </section>
@@ -203,7 +203,7 @@
 
                 <div class="footer-about">
                 <div class="footer-about__logo">
-                    <img src="/images/image.png" alt="">
+                    <img src="{% static '/images/image.png' %}" alt="">
                     <h3 class="">زامیتک</h3>
                 </div>
                 <div class="footer-about__caption">
@@ -227,11 +227,11 @@
             <div class="footer-links">
                 <h3 class="footer-titles">لینک‌های سریع</h3>
                 <ul class="footer-links__items">
-                    <a href="/product.html"><li class="footer-links__iteme">محصولات</li></a>
-                    <a href="/product.html"><li class="footer-links__iteme">راهکارها</li></a>
-                    <a href="/about-us.html"><li class="footer-links__iteme">درباره ما</li></a>
+                    <a href="{% url 'product' %}"><li class="footer-links__iteme">محصولات</li></a>
+                    <a href="{% url 'product' %}"><li class="footer-links__iteme">راهکارها</li></a>
+                    <a href="{% url 'about' %}"><li class="footer-links__iteme">درباره ما</li></a>
                     <a href="#"><li class="footer-links__iteme">وبلاگ</li></a>
-                    <a href="/cantact-us.html"><li class="footer-links__iteme">تماس با ما</li></a>
+                    <a href="{% url 'product' %}"><li class="footer-links__iteme">تماس با ما</li></a>
                 </ul>
             </div>
 
